@@ -94,22 +94,96 @@ class _AboutState extends State<About> {
                               ),
                             ),
                           ),
-                          Row(
+                          Column(
                             children: <Widget>[
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Container(
                                   width: 742,
                                   child: Card(
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Text(
-                                        'Human Resources Head',
-                                        style: TextStyle(
-                                          fontFamily: 'Poppins',
-                                          fontSize: 30,
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            'Human Resources Head',
+                                            style: TextStyle(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 25,
+                                            ),
+                                          ),
                                         ),
-                                      ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              8, 0, 0, 0),
+                                          child: Text(
+                                            'Instrument Society of India- VIT Vellore',
+                                            style: TextStyle(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 20,
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              8, 0, 0, 0),
+                                          child: Text(
+                                            'April 2019 - May 2020\nManaged student recruitments, delegation and any discrepancies in the chapter',
+                                            style: TextStyle(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 20,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  width: 742,
+                                  child: Card(
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            'Technical Intern',
+                                            style: TextStyle(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 25,
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              8, 0, 0, 0),
+                                          child: Text(
+                                            'Computer Revolution(U) Ltd.',
+                                            style: TextStyle(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 20,
+                                            ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              8, 0, 0, 0),
+                                          child: Text(
+                                            'May 2018 - June 2018\nMicrosoft Office 365 Migration for enterprises depending on user requirement and developing web apps on Azure Cloud and Docker were the main domains I worked on.',
+                                            style: TextStyle(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 20,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ),
