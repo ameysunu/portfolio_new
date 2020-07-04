@@ -116,12 +116,13 @@ class _ProjectsState extends State<Projects> {
                                 ),
                               ),
                             ),
-                            Column(
+                            Row(
                               children: <Widget>[
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding:
+                                      const EdgeInsets.fromLTRB(8, 16, 0, 8.0),
                                   child: Container(
-                                    width: 742,
+                                    width: 425,
                                     child: Card(
                                       color: Hexcolor('#0D0D0D'),
                                       child: Column(
@@ -131,34 +132,22 @@ class _ProjectsState extends State<Projects> {
                                           Padding(
                                             padding: const EdgeInsets.all(8.0),
                                             child: Text(
-                                              'Human Resources Head',
+                                              'Watered',
                                               style: TextStyle(
                                                   fontFamily: 'Poppins',
-                                                  fontSize: 25,
+                                                  fontSize: 20,
                                                   color: Colors.white),
                                             ),
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.fromLTRB(
-                                                8, 0, 0, 0),
+                                                8, 0, 0, 7),
                                             child: Text(
-                                              'Instrument Society of India- VIT Vellore',
+                                              'Watered is an app, which monitors water usage and leakages in your daily household. It also calls nearby plumbers and show their last seen and how far they are, from your current location. It also provides an awareness feature, where users can read about how they can save Earth\'s resources and also donate for the cause.',
                                               style: TextStyle(
                                                 fontFamily: 'Poppins',
-                                                fontSize: 20,
+                                                fontSize: 18,
                                                 color: Colors.white70,
-                                              ),
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.fromLTRB(
-                                                8, 0, 0, 0),
-                                            child: Text(
-                                              'April 2019 - May 2020\nManaged student recruitments, delegation and any discrepancies in the chapter',
-                                              style: TextStyle(
-                                                fontFamily: 'Poppins',
-                                                fontSize: 20,
-                                                color: Colors.white38,
                                               ),
                                             ),
                                           ),
@@ -167,10 +156,24 @@ class _ProjectsState extends State<Projects> {
                                     ),
                                   ),
                                 ),
+                                Container(
+                                    height: 300,
+                                    width: 300,
+                                    child: Image.asset('images/watered.png')),
+                              ],
+                            ),
+                            Row(
+                              children: <Widget>[
+                                Container(
+                                  height: 300,
+                                  width: 300,
+                                  child: Image.asset('images/newsforcovid.png'),
+                                ),
                                 Padding(
-                                  padding: const EdgeInsets.all(8.0),
+                                  padding:
+                                      const EdgeInsets.fromLTRB(8, 16, 0, 8.0),
                                   child: Container(
-                                    width: 742,
+                                    width: 425,
                                     child: Card(
                                       color: Hexcolor('#0D0D0D'),
                                       child: Column(
@@ -180,35 +183,22 @@ class _ProjectsState extends State<Projects> {
                                           Padding(
                                             padding: const EdgeInsets.all(8.0),
                                             child: Text(
-                                              'Technical Intern',
+                                              'News For Covid',
                                               style: TextStyle(
-                                                fontFamily: 'Poppins',
-                                                fontSize: 25,
-                                                color: Colors.white,
-                                              ),
+                                                  fontFamily: 'Poppins',
+                                                  fontSize: 20,
+                                                  color: Colors.white),
                                             ),
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.fromLTRB(
-                                                8, 0, 0, 0),
+                                                8, 0, 0, 7),
                                             child: Text(
-                                              'Computer Revolution(U) Ltd.',
+                                              'This app helps providing only adequate news required regarding the pandemic of Corona-Virus. It covers all sectors of business, stocks, health and much more. This app provides only news regarding COVID\'s impact on these sectors with the help of NewsApi, an open source news API and with a personalized dashboard, users can update their preferences. ',
                                               style: TextStyle(
                                                 fontFamily: 'Poppins',
-                                                fontSize: 20,
+                                                fontSize: 18,
                                                 color: Colors.white70,
-                                              ),
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.fromLTRB(
-                                                8, 0, 0, 0),
-                                            child: Text(
-                                              'May 2018 - June 2018\nMicrosoft Office 365 Migration for enterprises depending on user requirement and developing web apps on Azure Cloud and Docker were the main domains I worked on.',
-                                              style: TextStyle(
-                                                fontFamily: 'Poppins',
-                                                fontSize: 20,
-                                                color: Colors.white38,
                                               ),
                                             ),
                                           ),
@@ -218,7 +208,7 @@ class _ProjectsState extends State<Projects> {
                                   ),
                                 ),
                               ],
-                            ),
+                            )
                           ],
                         ),
                       ),
