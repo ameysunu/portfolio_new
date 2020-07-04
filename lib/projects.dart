@@ -56,7 +56,7 @@ class _ProjectsState extends State<Projects> {
                         height: double.infinity,
                         width: 764.1,
                         decoration: BoxDecoration(
-                          color: Hexcolor('#5C1426'),
+                          color: Hexcolor('#F77F52'),
                           shape: BoxShape.rectangle,
                         ),
                         child: Column(
@@ -84,7 +84,7 @@ class _ProjectsState extends State<Projects> {
                                     const EdgeInsets.fromLTRB(16, 1, 525, 0),
                                 child: RaisedButton(
                                   elevation: 3,
-                                  color: Hexcolor('#773920'),
+                                  color: Hexcolor('#9F206C'),
                                   onPressed: () async {
                                     if (await canLaunch(
                                         'https://github.com/ameysunu?tab=repositories')) {
@@ -124,7 +124,7 @@ class _ProjectsState extends State<Projects> {
                                   child: Container(
                                     width: 425,
                                     child: Card(
-                                      color: Hexcolor('#0D0D0D'),
+                                      color: Hexcolor('#54176D'),
                                       child: Column(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
@@ -175,7 +175,7 @@ class _ProjectsState extends State<Projects> {
                                   child: Container(
                                     width: 425,
                                     child: Card(
-                                      color: Hexcolor('#0D0D0D'),
+                                      color: Hexcolor('#D64860'),
                                       child: Column(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
