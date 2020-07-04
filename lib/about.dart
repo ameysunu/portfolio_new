@@ -35,7 +35,7 @@ class _AboutState extends State<About> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Padding(
-                            padding: const EdgeInsets.fromLTRB(50, 205, 20, 0),
+                            padding: const EdgeInsets.fromLTRB(50, 290, 20, 0),
                             child: Text(
                               'About Me',
                               style: TextStyle(
@@ -101,6 +101,7 @@ class _AboutState extends State<About> {
                                 child: Container(
                                   width: 742,
                                   child: Card(
+                                    color: Hexcolor('#0D0D0D'),
                                     child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
@@ -110,9 +111,9 @@ class _AboutState extends State<About> {
                                           child: Text(
                                             'Human Resources Head',
                                             style: TextStyle(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 25,
-                                            ),
+                                                fontFamily: 'Poppins',
+                                                fontSize: 25,
+                                                color: Colors.white),
                                           ),
                                         ),
                                         Padding(
@@ -123,6 +124,7 @@ class _AboutState extends State<About> {
                                             style: TextStyle(
                                               fontFamily: 'Poppins',
                                               fontSize: 20,
+                                              color: Colors.white70,
                                             ),
                                           ),
                                         ),
@@ -134,6 +136,7 @@ class _AboutState extends State<About> {
                                             style: TextStyle(
                                               fontFamily: 'Poppins',
                                               fontSize: 20,
+                                              color: Colors.white38,
                                             ),
                                           ),
                                         ),
@@ -147,6 +150,7 @@ class _AboutState extends State<About> {
                                 child: Container(
                                   width: 742,
                                   child: Card(
+                                    color: Hexcolor('#0D0D0D'),
                                     child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
@@ -158,6 +162,7 @@ class _AboutState extends State<About> {
                                             style: TextStyle(
                                               fontFamily: 'Poppins',
                                               fontSize: 25,
+                                              color: Colors.white,
                                             ),
                                           ),
                                         ),
@@ -169,6 +174,7 @@ class _AboutState extends State<About> {
                                             style: TextStyle(
                                               fontFamily: 'Poppins',
                                               fontSize: 20,
+                                              color: Colors.white70,
                                             ),
                                           ),
                                         ),
@@ -180,6 +186,7 @@ class _AboutState extends State<About> {
                                             style: TextStyle(
                                               fontFamily: 'Poppins',
                                               fontSize: 20,
+                                              color: Colors.white38,
                                             ),
                                           ),
                                         ),
