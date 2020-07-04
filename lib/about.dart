@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:portfolio/about.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'home.dart';
 
-class Home extends StatefulWidget {
+class About extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _AboutState createState() => _AboutState();
 }
 
-class _HomeState extends State<Home> {
+class _AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +25,7 @@ class _HomeState extends State<Home> {
                   children: <Widget>[
                     Container(
                       height: double.infinity,
-                      width: 800,
+                      width: 550,
                       decoration: BoxDecoration(
                         border: Border.all(width: 0, color: Colors.transparent),
                         color: Hexcolor('#002F61'),
@@ -36,57 +35,13 @@ class _HomeState extends State<Home> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Padding(
-                            padding: const EdgeInsets.fromLTRB(50, 200, 20, 0),
+                            padding: const EdgeInsets.fromLTRB(50, 205, 20, 0),
                             child: Text(
-                              'HELLO',
-                              style: TextStyle(
-                                fontFamily: 'Poppins',
-                                fontSize: 20.0,
-                                color: Hexcolor('#B0C5FF'),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(50, 5, 20, 0),
-                            child: Text(
-                              'I\'m Amey',
+                              'About Me',
                               style: TextStyle(
                                 fontFamily: 'Poppins',
                                 fontSize: 90.0,
                                 color: Hexcolor('#FFFFFF'),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(50, 5, 20, 0),
-                            child: Text(
-                              'AN ASPIRING FLUTTER DEVELOPER, CURRENTLY STUDYING BTECH - COMPUTER SCIENCE FROM VELLORE INSTITUTE OF TECHNOLOGY, VELLORE, INDIA',
-                              style: TextStyle(
-                                fontFamily: 'Poppins',
-                                fontSize: 20.0,
-                                color: Hexcolor('#FFFFFF'),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(350, 50, 20, 0),
-                            child: RaisedButton(
-                              color: Hexcolor('#005C8D'),
-                              elevation: 3.0,
-                              onPressed: () async {
-                                if (await canLaunch(
-                                    'https://1drv.ms/b/s!AkE_PH_qIaoLky5nJJgWTzQWagn2')) {
-                                  await launch(
-                                      'https://1drv.ms/b/s!AkE_PH_qIaoLky5nJJgWTzQWagn2');
-                                }
-                              },
-                              child: Text(
-                                'RESUME',
-                                style: TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontSize: 15.0,
-                                  color: Hexcolor('#FFFFFF'),
-                                ),
                               ),
                             ),
                           ),
@@ -96,9 +51,9 @@ class _HomeState extends State<Home> {
                     //MiddleWidget
                     Container(
                       height: double.infinity,
-                      width: 514.1,
+                      width: 764.1,
                       decoration: BoxDecoration(
-                        color: Hexcolor('#002F61'),
+                        color: Hexcolor('#414580'),
                         shape: BoxShape.rectangle,
                       ),
                       child: Column(
@@ -106,7 +61,60 @@ class _HomeState extends State<Home> {
                         children: <Widget>[
                           Container(
                             width: double.infinity,
-                            child: Image.asset('images/IMG_2590.jpeg'),
+                            child: Container(
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Card(
+                                  color: Hexcolor('#FFFFFF'),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Text(
+                                      'I\'m a final year engineering student studying Bachelors in Computer Science from Vellore Institute of Technology, Vellore, India and I currently live in Kampala, Uganda. I\'m a Flutter Developer developing both Web and Mobile Apps, including this site. One of my projects came 43rd out of 266 projects in Flutter Hack 2020. All my projects can be found in the Projects tab below.!',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 20,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Experiences',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontSize: 40,
+                                  color: Colors.white60,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Row(
+                            children: <Widget>[
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  width: 742,
+                                  child: Card(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text(
+                                        'Human Resources Head',
+                                        style: TextStyle(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 30,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
