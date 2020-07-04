@@ -212,18 +212,21 @@ class _AboutState extends State<About> {
                                 height: 100,
                                 width: 113.9,
                                 child: InkWell(
-                                  child: Card(
-                                    color: Hexcolor('#002F61'),
-                                    elevation: 0,
-                                    child: Center(
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(10.0),
-                                        child: Text(
-                                          'HOME',
-                                          style: TextStyle(
-                                            fontFamily: 'Poppins',
-                                            fontSize: 17,
-                                            color: Colors.white,
+                                  child: RotatedBox(
+                                    quarterTurns: 1,
+                                    child: Card(
+                                      color: Hexcolor('#002F61'),
+                                      elevation: 0,
+                                      child: Center(
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(10.0),
+                                          child: Text(
+                                            'HOME',
+                                            style: TextStyle(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 17,
+                                              color: Colors.white,
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -244,18 +247,21 @@ class _AboutState extends State<About> {
                                   height: 100,
                                   width: 113,
                                   child: InkWell(
-                                    child: Card(
-                                      elevation: 0,
-                                      color: Hexcolor('#002F61'),
-                                      child: Center(
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(10.0),
-                                          child: Text(
-                                            'ABOUT',
-                                            style: TextStyle(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 17,
-                                              color: Colors.white,
+                                    child: RotatedBox(
+                                      quarterTurns: 1,
+                                      child: Card(
+                                        elevation: 0,
+                                        color: Hexcolor('#002F61'),
+                                        child: Center(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(10.0),
+                                            child: Text(
+                                              'ABOUT',
+                                              style: TextStyle(
+                                                fontFamily: 'Poppins',
+                                                fontSize: 17,
+                                                color: Colors.white,
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -274,21 +280,24 @@ class _AboutState extends State<About> {
                               padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                               child: Container(
                                 child: SizedBox(
-                                  height: 100,
+                                  height: 112,
                                   width: 113,
                                   child: InkWell(
-                                    child: Card(
-                                      elevation: 0,
-                                      color: Hexcolor('#002F61'),
-                                      child: Center(
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(10.0),
-                                          child: Text(
-                                            'PROJECTS',
-                                            style: TextStyle(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 17,
-                                              color: Colors.white,
+                                    child: RotatedBox(
+                                      quarterTurns: 1,
+                                      child: Card(
+                                        elevation: 0,
+                                        color: Hexcolor('#002F61'),
+                                        child: Center(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(10.0),
+                                            child: Text(
+                                              'PROJECTS',
+                                              style: TextStyle(
+                                                fontFamily: 'Poppins',
+                                                fontSize: 17,
+                                                color: Colors.white,
+                                              ),
                                             ),
                                           ),
                                         ),
@@ -303,21 +312,24 @@ class _AboutState extends State<About> {
                               padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                               child: Container(
                                 child: SizedBox(
-                                  height: 100,
+                                  height: 111,
                                   width: 113,
                                   child: InkWell(
-                                    child: Card(
-                                      elevation: 0,
-                                      color: Hexcolor('#002F61'),
-                                      child: Center(
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(10.0),
-                                          child: Text(
-                                            'CONTACT',
-                                            style: TextStyle(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 17,
-                                              color: Colors.white,
+                                    child: RotatedBox(
+                                      quarterTurns: 1,
+                                      child: Card(
+                                        elevation: 0,
+                                        color: Hexcolor('#002F61'),
+                                        child: Center(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(10.0),
+                                            child: Text(
+                                              'CONTACT',
+                                              style: TextStyle(
+                                                fontFamily: 'Poppins',
+                                                fontSize: 17,
+                                                color: Colors.white,
+                                              ),
                                             ),
                                           ),
                                         ),
