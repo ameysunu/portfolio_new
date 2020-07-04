@@ -94,21 +94,23 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     //MiddleWidget
-                    Container(
-                      height: double.infinity,
-                      width: 514.1,
-                      decoration: BoxDecoration(
-                        color: Hexcolor('#002F61'),
-                        shape: BoxShape.rectangle,
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Container(
-                            width: double.infinity,
-                            child: Image.asset('images/IMG_2590.jpeg'),
-                          ),
-                        ],
+                    Expanded(
+                      child: Container(
+                        height: double.infinity,
+                        width: 514.1,
+                        decoration: BoxDecoration(
+                          color: Hexcolor('#002F61'),
+                          shape: BoxShape.rectangle,
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Container(
+                              width: double.infinity,
+                              child: Image.asset('images/IMG_2590.jpeg'),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     //RightWidget
@@ -191,7 +193,7 @@ class _HomeState extends State<Home> {
                               padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                               child: Container(
                                 child: SizedBox(
-                                  height: 112,
+                                  height: 113,
                                   width: 113,
                                   child: InkWell(
                                     child: RotatedBox(

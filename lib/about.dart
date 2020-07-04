@@ -49,155 +49,157 @@ class _AboutState extends State<About> {
                       ),
                     ),
                     //MiddleWidget
-                    Container(
-                      height: double.infinity,
-                      width: 764.1,
-                      decoration: BoxDecoration(
-                        color: Hexcolor('#414580'),
-                        shape: BoxShape.rectangle,
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Container(
-                            width: double.infinity,
-                            child: Container(
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Card(
-                                  color: Hexcolor('#FFFFFF'),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(16.0),
-                                    child: Text(
-                                      'I\'m a final year engineering student studying Bachelors in Computer Science from Vellore Institute of Technology, Vellore, India and I currently live in Kampala, Uganda. I\'m a Flutter Developer developing both Web and Mobile Apps, including this site. One of my projects came 43rd out of 266 projects in Flutter Hack 2020. All my projects can be found in the Projects tab below.!',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 20,
-                                        color: Colors.black,
+                    Expanded(
+                      child: Container(
+                        height: double.infinity,
+                        width: 764.1,
+                        decoration: BoxDecoration(
+                          color: Hexcolor('#414580'),
+                          shape: BoxShape.rectangle,
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Container(
+                              width: double.infinity,
+                              child: Container(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Card(
+                                    color: Hexcolor('#FFFFFF'),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(16.0),
+                                      child: Text(
+                                        'I\'m a final year engineering student studying Bachelors in Computer Science from Vellore Institute of Technology, Vellore, India and I currently live in Kampala, Uganda. I\'m a Flutter Developer developing both Web and Mobile Apps, including this site. One of my projects came 43rd out of 266 projects in Flutter Hack 2020. All my projects can be found in the Projects tab below.!',
+                                        style: TextStyle(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 20,
+                                          color: Colors.black,
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                          Container(
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text(
-                                'Experiences',
-                                style: TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontSize: 40,
-                                  color: Colors.white60,
+                            Container(
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  'Experiences',
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 40,
+                                    color: Colors.white60,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Column(
-                            children: <Widget>[
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  width: 742,
-                                  child: Card(
-                                    color: Hexcolor('#0D0D0D'),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: <Widget>[
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text(
-                                            'Human Resources Head',
-                                            style: TextStyle(
+                            Column(
+                              children: <Widget>[
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Container(
+                                    width: 742,
+                                    child: Card(
+                                      color: Hexcolor('#0D0D0D'),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(
+                                              'Human Resources Head',
+                                              style: TextStyle(
+                                                  fontFamily: 'Poppins',
+                                                  fontSize: 25,
+                                                  color: Colors.white),
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.fromLTRB(
+                                                8, 0, 0, 0),
+                                            child: Text(
+                                              'Instrument Society of India- VIT Vellore',
+                                              style: TextStyle(
+                                                fontFamily: 'Poppins',
+                                                fontSize: 20,
+                                                color: Colors.white70,
+                                              ),
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.fromLTRB(
+                                                8, 0, 0, 0),
+                                            child: Text(
+                                              'April 2019 - May 2020\nManaged student recruitments, delegation and any discrepancies in the chapter',
+                                              style: TextStyle(
+                                                fontFamily: 'Poppins',
+                                                fontSize: 20,
+                                                color: Colors.white38,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Container(
+                                    width: 742,
+                                    child: Card(
+                                      color: Hexcolor('#0D0D0D'),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: <Widget>[
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(
+                                              'Technical Intern',
+                                              style: TextStyle(
                                                 fontFamily: 'Poppins',
                                                 fontSize: 25,
-                                                color: Colors.white),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                              8, 0, 0, 0),
-                                          child: Text(
-                                            'Instrument Society of India- VIT Vellore',
-                                            style: TextStyle(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 20,
-                                              color: Colors.white70,
+                                                color: Colors.white,
+                                              ),
                                             ),
                                           ),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                              8, 0, 0, 0),
-                                          child: Text(
-                                            'April 2019 - May 2020\nManaged student recruitments, delegation and any discrepancies in the chapter',
-                                            style: TextStyle(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 20,
-                                              color: Colors.white38,
+                                          Padding(
+                                            padding: const EdgeInsets.fromLTRB(
+                                                8, 0, 0, 0),
+                                            child: Text(
+                                              'Computer Revolution(U) Ltd.',
+                                              style: TextStyle(
+                                                fontFamily: 'Poppins',
+                                                fontSize: 20,
+                                                color: Colors.white70,
+                                              ),
                                             ),
                                           ),
-                                        ),
-                                      ],
+                                          Padding(
+                                            padding: const EdgeInsets.fromLTRB(
+                                                8, 0, 0, 0),
+                                            child: Text(
+                                              'May 2018 - June 2018\nMicrosoft Office 365 Migration for enterprises depending on user requirement and developing web apps on Azure Cloud and Docker were the main domains I worked on.',
+                                              style: TextStyle(
+                                                fontFamily: 'Poppins',
+                                                fontSize: 20,
+                                                color: Colors.white38,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  width: 742,
-                                  child: Card(
-                                    color: Hexcolor('#0D0D0D'),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: <Widget>[
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text(
-                                            'Technical Intern',
-                                            style: TextStyle(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 25,
-                                              color: Colors.white,
-                                            ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                              8, 0, 0, 0),
-                                          child: Text(
-                                            'Computer Revolution(U) Ltd.',
-                                            style: TextStyle(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 20,
-                                              color: Colors.white70,
-                                            ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                              8, 0, 0, 0),
-                                          child: Text(
-                                            'May 2018 - June 2018\nMicrosoft Office 365 Migration for enterprises depending on user requirement and developing web apps on Azure Cloud and Docker were the main domains I worked on.',
-                                            style: TextStyle(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 20,
-                                              color: Colors.white38,
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     //RightWidget
@@ -280,7 +282,7 @@ class _AboutState extends State<About> {
                               padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                               child: Container(
                                 child: SizedBox(
-                                  height: 112,
+                                  height: 113,
                                   width: 113,
                                   child: InkWell(
                                     child: RotatedBox(
