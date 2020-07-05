@@ -70,7 +70,7 @@ class _ContactState extends State<Contact> {
                             height: double.infinity,
                             width: 764.1,
                             decoration: BoxDecoration(
-                              color: Hexcolor('#414580'),
+                              color: Hexcolor('#F77F52'),
                               shape: BoxShape.rectangle,
                             ),
                             child: Column(
@@ -88,7 +88,7 @@ class _ContactState extends State<Contact> {
                                           style: TextStyle(
                                             fontFamily: 'Poppins',
                                             fontSize: 30,
-                                            color: Colors.white,
+                                            color: Hexcolor('#54176D'),
                                           ),
                                         ),
                                       ),
@@ -118,7 +118,8 @@ class _ContactState extends State<Contact> {
                                                     style: TextStyle(
                                                       fontFamily: 'Poppins',
                                                       fontSize: 20,
-                                                      color: Colors.white,
+                                                      color:
+                                                          Hexcolor('#264775'),
                                                     ),
                                                   ),
                                                 ),
@@ -156,7 +157,8 @@ class _ContactState extends State<Contact> {
                                                     style: TextStyle(
                                                       fontFamily: 'Poppins',
                                                       fontSize: 20,
-                                                      color: Colors.white,
+                                                      color:
+                                                          Hexcolor('#264775'),
                                                     ),
                                                   ),
                                                 ),
@@ -189,7 +191,8 @@ class _ContactState extends State<Contact> {
                                                     style: TextStyle(
                                                       fontFamily: 'Poppins',
                                                       fontSize: 20,
-                                                      color: Colors.white,
+                                                      color:
+                                                          Hexcolor('#264775'),
                                                     ),
                                                   ),
                                                 ),
@@ -227,7 +230,8 @@ class _ContactState extends State<Contact> {
                                                     style: TextStyle(
                                                       fontFamily: 'Poppins',
                                                       fontSize: 20,
-                                                      color: Colors.white,
+                                                      color:
+                                                          Hexcolor('#264775'),
                                                     ),
                                                   ),
                                                 ),
@@ -245,6 +249,28 @@ class _ContactState extends State<Contact> {
                                       },
                                     ),
                                   ],
+                                ),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.fromLTRB(16, 60, 16, 0),
+                                  child: Container(
+                                    width: double.infinity,
+                                    height: 120,
+                                    child: Card(
+                                      color: Hexcolor('#D0384F'),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(16.0),
+                                        child: Text(
+                                          'Thank you so much for giving my site a visit! Have a great day!',
+                                          style: TextStyle(
+                                            fontFamily: 'Poppins',
+                                            fontSize: 25,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
