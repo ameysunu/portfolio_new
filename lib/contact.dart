@@ -3,6 +3,7 @@ import 'package:hexcolor/hexcolor.dart';
 import 'home.dart';
 import 'projects.dart';
 import 'about.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Contact extends StatefulWidget {
   @override
@@ -10,6 +11,15 @@ class Contact extends StatefulWidget {
 }
 
 class _ContactState extends State<Contact> {
+  _launchURL(String toMailId) async {
+    var url = 'mailto:$toMailId';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +53,7 @@ class _ContactState extends State<Contact> {
                                 padding:
                                     const EdgeInsets.fromLTRB(50, 290, 20, 0),
                                 child: Text(
-                                  'About Me',
+                                  'Contact',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 90.0,
@@ -71,82 +81,45 @@ class _ContactState extends State<Contact> {
                                   child: Container(
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: Card(
-                                        color: Hexcolor('#FFFFFF'),
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(16.0),
-                                          child: Text(
-                                            'I\'m a final year engineering student studying Bachelors in Computer Science from Vellore Institute of Technology, Vellore, India and I currently live in Kampala, Uganda. I\'m a Flutter Developer developing both Web and Mobile Apps, including this site. One of my projects came 43rd out of 266 projects in Flutter Hack 2020. All my projects can be found in the Projects tab below.!',
-                                            style: TextStyle(
-                                              fontFamily: 'Poppins',
-                                              fontSize: 20,
-                                              color: Colors.black,
-                                            ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(16.0),
+                                        child: Text(
+                                          'If you wanted to get in touch with me, the links are all yours to use.',
+                                          style: TextStyle(
+                                            fontFamily: 'Poppins',
+                                            fontSize: 30,
+                                            color: Colors.white,
                                           ),
                                         ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Text(
-                                      'Experiences',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 40,
-                                        color: Colors.white60,
                                       ),
                                     ),
                                   ),
                                 ),
                                 Column(
                                   children: <Widget>[
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Container(
-                                        width: 742,
-                                        child: Card(
-                                          color: Hexcolor('#0D0D0D'),
-                                          child: Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
+                                    InkWell(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(16.0),
+                                        child: Container(
+                                          child: Row(
                                             children: <Widget>[
-                                              Padding(
-                                                padding:
-                                                    const EdgeInsets.all(8.0),
-                                                child: Text(
-                                                  'Human Resources Head',
-                                                  style: TextStyle(
+                                              Container(
+                                                height: 50,
+                                                width: 50,
+                                                child: Image.asset(
+                                                    'images/facebook.png'),
+                                              ),
+                                              Container(
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(
+                                                      20.0),
+                                                  child: Text(
+                                                    'Visit me on Facebook!',
+                                                    style: TextStyle(
                                                       fontFamily: 'Poppins',
-                                                      fontSize: 25,
-                                                      color: Colors.white),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                        8, 0, 0, 0),
-                                                child: Text(
-                                                  'Instrument Society of India- VIT Vellore',
-                                                  style: TextStyle(
-                                                    fontFamily: 'Poppins',
-                                                    fontSize: 20,
-                                                    color: Colors.white70,
-                                                  ),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                        8, 0, 0, 0),
-                                                child: Text(
-                                                  'April 2019 - May 2020\nManaged student recruitments, delegation and any discrepancies in the chapter',
-                                                  style: TextStyle(
-                                                    fontFamily: 'Poppins',
-                                                    fontSize: 20,
-                                                    color: Colors.white38,
+                                                      fontSize: 20,
+                                                      color: Colors.white,
+                                                    ),
                                                   ),
                                                 ),
                                               ),
@@ -154,52 +127,37 @@ class _ContactState extends State<Contact> {
                                           ),
                                         ),
                                       ),
+                                      onTap: () async {
+                                        if (await canLaunch(
+                                            'https://www.facebook.com/ameysunu.sunu/')) {
+                                          await launch(
+                                              'https://www.facebook.com/ameysunu.sunu/');
+                                        }
+                                      },
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Container(
-                                        width: 742,
-                                        child: Card(
-                                          color: Hexcolor('#0D0D0D'),
-                                          child: Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
+                                    InkWell(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(16.0),
+                                        child: Container(
+                                          child: Row(
                                             children: <Widget>[
-                                              Padding(
-                                                padding:
-                                                    const EdgeInsets.all(8.0),
-                                                child: Text(
-                                                  'Technical Intern',
-                                                  style: TextStyle(
-                                                    fontFamily: 'Poppins',
-                                                    fontSize: 25,
-                                                    color: Colors.white,
-                                                  ),
-                                                ),
+                                              Container(
+                                                height: 50,
+                                                width: 50,
+                                                child: Image.asset(
+                                                    'images/email.png'),
                                               ),
-                                              Padding(
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                        8, 0, 0, 0),
-                                                child: Text(
-                                                  'Computer Revolution(U) Ltd.',
-                                                  style: TextStyle(
-                                                    fontFamily: 'Poppins',
-                                                    fontSize: 20,
-                                                    color: Colors.white70,
-                                                  ),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                        8, 0, 0, 0),
-                                                child: Text(
-                                                  'May 2018 - June 2018\nMicrosoft Office 365 Migration for enterprises depending on user requirement and developing web apps on Azure Cloud and Docker were the main domains I worked on.',
-                                                  style: TextStyle(
-                                                    fontFamily: 'Poppins',
-                                                    fontSize: 20,
-                                                    color: Colors.white38,
+                                              Container(
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(
+                                                      20.0),
+                                                  child: Text(
+                                                    'I\'ll be waiting for your email eagerly!',
+                                                    style: TextStyle(
+                                                      fontFamily: 'Poppins',
+                                                      fontSize: 20,
+                                                      color: Colors.white,
+                                                    ),
                                                   ),
                                                 ),
                                               ),
@@ -207,6 +165,84 @@ class _ContactState extends State<Contact> {
                                           ),
                                         ),
                                       ),
+                                      onTap: () =>
+                                          _launchURL('ameysunu00719@gmail.com'),
+                                    ),
+                                    InkWell(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(16.0),
+                                        child: Container(
+                                          child: Row(
+                                            children: <Widget>[
+                                              Container(
+                                                height: 50,
+                                                width: 50,
+                                                child: Image.asset(
+                                                    'images/github.png'),
+                                              ),
+                                              Container(
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(
+                                                      20.0),
+                                                  child: Text(
+                                                    'Check out my projects and fork em if you like em!',
+                                                    style: TextStyle(
+                                                      fontFamily: 'Poppins',
+                                                      fontSize: 20,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                      onTap: () async {
+                                        if (await canLaunch(
+                                            'https://www.github.com/ameysunu')) {
+                                          await launch(
+                                              'https://www.github.com/ameysunu');
+                                        }
+                                      },
+                                    ),
+                                    InkWell(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(16.0),
+                                        child: Container(
+                                          child: Row(
+                                            children: <Widget>[
+                                              Container(
+                                                height: 50,
+                                                width: 50,
+                                                child: Image.asset(
+                                                    'images/linkedin.png'),
+                                              ),
+                                              Container(
+                                                child: Padding(
+                                                  padding: const EdgeInsets.all(
+                                                      20.0),
+                                                  child: Text(
+                                                    'My career is here!',
+                                                    style: TextStyle(
+                                                      fontFamily: 'Poppins',
+                                                      fontSize: 20,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                      onTap: () async {
+                                        if (await canLaunch(
+                                            'https://linkedin.com/in/amey-sunu-187103171/')) {
+                                          await launch(
+                                              'https://linkedin.com/in/amey-sunu-187103171/');
+                                        }
+                                      },
                                     ),
                                   ],
                                 ),
