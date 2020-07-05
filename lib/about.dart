@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'home.dart';
 import 'projects.dart';
+import 'contact.dart';
 
 class About extends StatefulWidget {
   @override
@@ -359,7 +360,11 @@ class _AboutState extends State<About> {
                                             ),
                                           ),
                                         ),
-                                        onTap: null,
+                                        onTap: () => Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => Contact()),
+                                        ),
                                       ),
                                     ),
                                   ),

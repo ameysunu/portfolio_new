@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'home.dart';
+import 'projects.dart';
 import 'about.dart';
-import 'contact.dart';
 
-class Projects extends StatefulWidget {
+class Contact extends StatefulWidget {
   @override
-  _ProjectsState createState() => _ProjectsState();
+  _ContactState createState() => _ContactState();
 }
 
-class _ProjectsState extends State<Projects> {
+class _ContactState extends State<Contact> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,9 +41,9 @@ class _ProjectsState extends State<Projects> {
                             children: <Widget>[
                               Padding(
                                 padding:
-                                    const EdgeInsets.fromLTRB(50, 270, 20, 0),
+                                    const EdgeInsets.fromLTRB(50, 290, 20, 0),
                                 child: Text(
-                                  'Flutter Projects',
+                                  'About Me',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 90.0,
@@ -61,7 +60,7 @@ class _ProjectsState extends State<Projects> {
                             height: double.infinity,
                             width: 764.1,
                             decoration: BoxDecoration(
-                              color: Hexcolor('#F77F52'),
+                              color: Hexcolor('#414580'),
                               shape: BoxShape.rectangle,
                             ),
                             child: Column(
@@ -71,13 +70,19 @@ class _ProjectsState extends State<Projects> {
                                   width: double.infinity,
                                   child: Container(
                                     child: Padding(
-                                      padding: const EdgeInsets.all(16.0),
-                                      child: Text(
-                                        'These are my main Flutter Projects only, others are available on my GitHub',
-                                        style: TextStyle(
-                                          fontFamily: 'Poppins',
-                                          fontSize: 25,
-                                          color: Colors.white,
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Card(
+                                        color: Hexcolor('#FFFFFF'),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(16.0),
+                                          child: Text(
+                                            'I\'m a final year engineering student studying Bachelors in Computer Science from Vellore Institute of Technology, Vellore, India and I currently live in Kampala, Uganda. I\'m a Flutter Developer developing both Web and Mobile Apps, including this site. One of my projects came 43rd out of 266 projects in Flutter Hack 2020. All my projects can be found in the Projects tab below.!',
+                                            style: TextStyle(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 20,
+                                              color: Colors.black,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -85,51 +90,25 @@ class _ProjectsState extends State<Projects> {
                                 ),
                                 Container(
                                   child: Padding(
-                                    padding: const EdgeInsets.fromLTRB(
-                                        16, 1, 525, 0),
-                                    child: RaisedButton(
-                                      elevation: 3,
-                                      color: Hexcolor('#9F206C'),
-                                      onPressed: () async {
-                                        if (await canLaunch(
-                                            'https://github.com/ameysunu?tab=repositories')) {
-                                          await launch(
-                                              'https://github.com/ameysunu?tab=repositories');
-                                        }
-                                      },
-                                      child: Row(
-                                        children: <Widget>[
-                                          Container(
-                                              height: 20,
-                                              width: 20,
-                                              child: Image.asset(
-                                                  'images/github.png')),
-                                          Padding(
-                                            padding: const EdgeInsets.fromLTRB(
-                                                5, 0, 0, 0),
-                                            child: Text(
-                                              'View on GitHub',
-                                              style: TextStyle(
-                                                fontFamily: 'Poppins',
-                                                fontSize: 20,
-                                                color: Colors.white,
-                                              ),
-                                            ),
-                                          ),
-                                        ],
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      'Experiences',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontSize: 40,
+                                        color: Colors.white60,
                                       ),
                                     ),
                                   ),
                                 ),
-                                Row(
+                                Column(
                                   children: <Widget>[
                                     Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          8, 16, 0, 8.0),
+                                      padding: const EdgeInsets.all(8.0),
                                       child: Container(
-                                        width: 425,
+                                        width: 742,
                                         child: Card(
-                                          color: Hexcolor('#54176D'),
+                                          color: Hexcolor('#0D0D0D'),
                                           child: Column(
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
@@ -138,23 +117,36 @@ class _ProjectsState extends State<Projects> {
                                                 padding:
                                                     const EdgeInsets.all(8.0),
                                                 child: Text(
-                                                  'Watered',
+                                                  'Human Resources Head',
                                                   style: TextStyle(
                                                       fontFamily: 'Poppins',
-                                                      fontSize: 20,
+                                                      fontSize: 25,
                                                       color: Colors.white),
                                                 ),
                                               ),
                                               Padding(
                                                 padding:
                                                     const EdgeInsets.fromLTRB(
-                                                        8, 0, 0, 7),
+                                                        8, 0, 0, 0),
                                                 child: Text(
-                                                  'Watered is an app, which monitors water usage and leakages in your daily household. It also calls nearby plumbers and show their last seen and how far they are, from your current location. It also provides an awareness feature, where users can read about how they can save Earth\'s resources and also donate for the cause.',
+                                                  'Instrument Society of India- VIT Vellore',
                                                   style: TextStyle(
                                                     fontFamily: 'Poppins',
-                                                    fontSize: 18,
+                                                    fontSize: 20,
                                                     color: Colors.white70,
+                                                  ),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        8, 0, 0, 0),
+                                                child: Text(
+                                                  'April 2019 - May 2020\nManaged student recruitments, delegation and any discrepancies in the chapter',
+                                                  style: TextStyle(
+                                                    fontFamily: 'Poppins',
+                                                    fontSize: 20,
+                                                    color: Colors.white38,
                                                   ),
                                                 ),
                                               ),
@@ -163,63 +155,61 @@ class _ProjectsState extends State<Projects> {
                                         ),
                                       ),
                                     ),
-                                    Container(
-                                        height: 300,
-                                        width: 300,
-                                        child:
-                                            Image.asset('images/watered.png')),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Container(
+                                        width: 742,
+                                        child: Card(
+                                          color: Hexcolor('#0D0D0D'),
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: <Widget>[
+                                              Padding(
+                                                padding:
+                                                    const EdgeInsets.all(8.0),
+                                                child: Text(
+                                                  'Technical Intern',
+                                                  style: TextStyle(
+                                                    fontFamily: 'Poppins',
+                                                    fontSize: 25,
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        8, 0, 0, 0),
+                                                child: Text(
+                                                  'Computer Revolution(U) Ltd.',
+                                                  style: TextStyle(
+                                                    fontFamily: 'Poppins',
+                                                    fontSize: 20,
+                                                    color: Colors.white70,
+                                                  ),
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        8, 0, 0, 0),
+                                                child: Text(
+                                                  'May 2018 - June 2018\nMicrosoft Office 365 Migration for enterprises depending on user requirement and developing web apps on Azure Cloud and Docker were the main domains I worked on.',
+                                                  style: TextStyle(
+                                                    fontFamily: 'Poppins',
+                                                    fontSize: 20,
+                                                    color: Colors.white38,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
                                   ],
                                 ),
-                                Row(
-                                  children: <Widget>[
-                                    Container(
-                                      height: 300,
-                                      width: 300,
-                                      child: Image.asset(
-                                          'images/newsforcovid.png'),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          8, 16, 0, 8.0),
-                                      child: Container(
-                                        width: 425,
-                                        child: Card(
-                                          color: Hexcolor('#D64860'),
-                                          child: Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
-                                              Padding(
-                                                padding:
-                                                    const EdgeInsets.all(8.0),
-                                                child: Text(
-                                                  'News For Covid',
-                                                  style: TextStyle(
-                                                      fontFamily: 'Poppins',
-                                                      fontSize: 20,
-                                                      color: Colors.white),
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                        8, 0, 0, 7),
-                                                child: Text(
-                                                  'This app helps providing only adequate news required regarding the pandemic of Corona-Virus. It covers all sectors of business, stocks, health and much more. This app provides only news regarding COVID\'s impact on these sectors with the help of NewsApi, an open source news API and with a personalized dashboard, users can update their preferences. ',
-                                                  style: TextStyle(
-                                                    fontFamily: 'Poppins',
-                                                    fontSize: 18,
-                                                    color: Colors.white70,
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                )
                               ],
                             ),
                           ),

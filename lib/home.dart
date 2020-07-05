@@ -3,6 +3,7 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:portfolio/about.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'projects.dart';
+import 'contact.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -267,7 +268,11 @@ class _HomeState extends State<Home> {
                                             ),
                                           ),
                                         ),
-                                        onTap: null,
+                                        onTap: () => Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => Contact()),
+                                        ),
                                       ),
                                     ),
                                   ),
